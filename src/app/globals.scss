@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply text-black-11;
+    font-size: 16px;
+    line-height: 1.1;
+  }
+
+  h1, .h1 {
+    font-size: 3.812rem;
+  }
+
+  h2, .h2 {
+    font-size: 3.062rem;
+  }
+
+  h3, .h3 {
+    font-size: 2.438rem;
+  }
+
+  h4, .h4 {
+    font-size: 1.938rem;
+  }
+
+  h5, .h5 {
+    font-size: 1.562rem;
+  }
+
+  h6, .h6 {
+    font-size: 1.250rem;
+    line-height: 2rem;
+  }
+
+  p, .body, .p {
+    font-size: 1rem;
+  }
+
+  small, .small {
+    font-size: 0.812rem;
+  }
+
+  .caption {
+    font-size: 0.625rem;
+  }
+}
+
+@layer components {
+  .apply-transition {
+    @apply transition-all duration-200;
+  }
+
+  .image-cover {
+    @apply object-cover object-center w-full h-full;
+  }
+
+  .input {
+    @apply block w-full bg-white border-2 border-black-5 rounded-md outline-0 px-4 py-4 body hover:border-primary-200 focus:border-primary-500 apply-transition focus:ring-4 focus:ring-primary-100 focus:ring-offset-0 resize-none;
+  }
+
+  .privacy {
+    h4 {
+      @apply mt-10 mb-2 h5 font-semibold;
+    }
+
+    p {
+      @apply leading-6 my-2;
+    }
+
+    ul {
+      @apply list-disc pl-4 leading-8;
+    }
+
+    a {
+      @apply text-primary-500 hover:underline;
+    }
+  }
+}
