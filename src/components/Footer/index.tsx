@@ -18,7 +18,7 @@ function Footer(props: IProps) {
           <div className="flex-1">
             <p><Image src={images.fagoPayWhite} alt="Logo" height={80} className="h-10 w-auto"/></p>
             <h6 className="mt-5 max-w-lg">
-              Innovative Personal and Business Banking solution for Africans.
+              Innovative Personal and Business Banking solution for Africans. DG
             </h6>
           </div>
 
